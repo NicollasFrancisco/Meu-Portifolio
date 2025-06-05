@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #f9fafb;
+    color: #333;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: #2c3e50;
+    color: #fff;
+}
+
+header img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #ecf0f1;
+}
+
+nav {
+    background: #333;
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    margin: 0 20px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #8f9694;
+}
+
+main {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+section {
+    background: #fff;
+    margin-bottom: 30px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #96969e;
+    padding-bottom: 8px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    padding: 10px 0;
+}
+
+#projetos ul li {
+    margin-bottom: 20px;
+}
+
+#projetos h3 {
+    font-size: 1.3em;
+    color: #2c3e50;
+}
+
+#projetos p {
+    margin: 10px 0;
+}
+
+a {
+    color: #171ab9;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #34a1e9;
+}
+
+.social a {
+    font-size: 2em;
+    margin-right: 15px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #0b1bac;
+}
+
+footer {
+    background: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+#botão-cima {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #3c48eb;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5em;
+    cursor: pointer;
+    display: none;
+    transition: 0.3s ease;
+}
+
+#botão-cima:hover {
+    background: #162fa0;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8em;
+    }
+
+    header img {
+        width: 100px;
+        height: 100px;
+    }
+
+    nav a {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .social a {
+        font-size: 1.5em;
+    }
+
+    section {
+        padding: 15px;
+    }
+}
